@@ -1,7 +1,18 @@
-#include <iostream>
+#include "test.h"
 
-int main()
+test::test()
+    :m_count(0)
+{}
+
+test::~test()
+{}
+
+void test::set(int in)
 {
-    std::cout << "Hello World!" << std::endl;
-    return 0;
+    m_count = in;
+}
+
+int test::get() const
+{
+    return m_count;
 }
